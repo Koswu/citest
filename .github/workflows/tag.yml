@@ -28,6 +28,5 @@ jobs:
       - name: Set env
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Release
-        run: |
-          uses: fnkr/github-action-ghr@$RELEASE_VERSION
+        uses: fnkr/github-action-ghr@$RELEASE_VERSION
 
